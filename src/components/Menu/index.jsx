@@ -1,36 +1,36 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import MenuItem from "../MenuItem";
+import { Row, Col } from "reactstrap";
+import ProfileImage from "../ProfileImage";
+import useWindowDimensions from "../../state/hooks/useWindowDimensions";
+import { MdMenu } from "react-icons/md";
 
-class Menu extends Component {
-  constructor({ sections }) {
-    super();
-    this.sections = sections;
-    this.state = {
-      activeMenuItem: { ...sections }
-    };
-  }
+const Menu = ({ sections }) => {
+  const [activeMenuItem, setactiveMenuItem] = useState([{ ...sections }]);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  handleScroll() {
+  const handleScroll = () => {
     const curPos = window.scrollY;
     let curSection = null;
 
-    for (var key in this.sections) {
-      if (curPos + 1 > this.sections[key]) {
+    for (var key in sections) {
+      if (curPos + 1 > sections[key]) {
         curSection = key;
       }
     }
 
-    if (this.state.activeMenuItem[curSection] !== "active") {
-      const newMenuState = { ...this.props.section };
+    if (activeMenuItem[curSection] !== "active") {
+      const newMenuState = { ...sections };
       newMenuState[curSection] = "active";
-      this.setState({ activeMenuItem: newMenuState });
+      setactiveMenuItem({ ...newMenuState });
     }
-  }
+  };
 
-  getAnchorPoints() {
+  const getAnchorPoints = () => {
     const curScroll = window.scrollY;
-    for (var key in this.sections) {
-      this.sections[key] =
+
+    for (var key in sections) {
+      sections[key] =
         document.getElementById(key).getBoundingClientRect().top + curScroll;
     }
 
@@ -47,38 +47,71 @@ class Menu extends Component {
 
     /* If max-scroll is less than the pixel-depth of Section 3, then adjust the pixel-depth of Section 3 to be 50px higher than max scroll depth ... allowing it to be an active destination */
 
-    if (viewPortHeight > bottom - this.sections.experience) {
-      this.sections.experience = bottom - viewPortHeight - 50;
+    if (viewPortHeight > bottom - sections.experience) {
+      sections.experience = bottom - viewPortHeight - 50;
     }
-    this.handleScroll();
-  }
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll.bind(this));
+    handleScroll();
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
 
     /* When window resizes, get new scroll-depth positions of anchors */
 
-    window.addEventListener("resize", this.getAnchorPoints.bind(this));
+    window.addEventListener("resize", getAnchorPoints);
 
-    this.getAnchorPoints();
-  }
+    getAnchorPoints();
+  }, []);
 
-  render() {
-    const menuItems = [];
-    for (var key in this.sections) {
-      menuItems.push(
-        <MenuItem
-          itemName={key}
-          active={this.state.activeMenuItem[key]}
-          key={key}
-        />
-      );
-    }
-    return (
-      <div className="menu">
-        <ul>{menuItems}</ul>
-      </div>
+  const handleMenuDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const { width } = useWindowDimensions();
+  const menuIsVertical = width >= 800 ? true : false;
+  const menuItems = [];
+
+  for (var key in sections) {
+    menuItems.push(
+      <Row key={key + "row"}>
+        <Col>
+          <MenuItem
+            itemName={key}
+            active={activeMenuItem[key]}
+            isDropdownOpen={isDropdownOpen}
+            setIsDropdownOpen={setIsDropdownOpen}
+          />
+        </Col>
+      </Row>
     );
   }
-}
+
+  return menuIsVertical ? (
+    <div className="menu-vertical">
+      <ProfileImage />
+      {menuItems}
+    </div>
+  ) : (
+    <React.Fragment>
+      <div
+        className={`menu-horizontal ${
+          isDropdownOpen ? "menu-horizontal-open" : ""
+        }`}
+      >
+        <div className="menu-horizontal-header">
+          <div className="name-label">Vitor A. Silva</div>
+          <MdMenu
+            size={30}
+            onClick={() => {
+              handleMenuDropdown();
+            }}
+            className="dropdown-menu-button"
+          />
+        </div>
+        {isDropdownOpen ? menuItems : false}
+      </div>
+    </React.Fragment>
+  );
+};
 export default Menu;
