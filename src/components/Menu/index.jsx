@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import MenuItem from "../MenuItem";
-import { Row, Col } from "reactstrap";
 import ProfileImage from "../ProfileImage";
 import useWindowDimensions from "../../state/hooks/useWindowDimensions";
 import { MdMenu } from "react-icons/md";
@@ -72,46 +71,47 @@ const Menu = ({ sections }) => {
   const menuIsVertical = width >= 800 ? true : false;
   const menuItems = [];
 
+  /* Build the menu items array */
   for (var key in sections) {
     menuItems.push(
-      <Row key={key + "row"}>
-        <Col>
-          <MenuItem
-            itemName={key}
-            active={activeMenuItem[key]}
-            isDropdownOpen={isDropdownOpen}
-            setIsDropdownOpen={setIsDropdownOpen}
-          />
-        </Col>
-      </Row>
+      <MenuItem
+        key={key}
+        itemName={key}
+        active={activeMenuItem[key]}
+        isDropdownOpen={isDropdownOpen}
+        setIsDropdownOpen={setIsDropdownOpen}
+      />
     );
   }
 
-  return menuIsVertical ? (
-    <div className="menu-vertical">
-      <ProfileImage />
-      {menuItems}
+  return (
+    <div
+      className={`
+      ${menuIsVertical ? "menu-vertical" : "menu-horizontal"} 
+      ${isDropdownOpen ? " menu-horizontal-open" : ""}
+      `}
+    >
+      {menuIsVertical ? (
+        <React.Fragment>
+          <ProfileImage />
+          {menuItems}
+        </React.Fragment>
+      ) : (
+        <React.Fragment>
+          <div className="header">
+            <div className="name-label">Vitor A. Silva</div>
+            <MdMenu
+              size={30}
+              onClick={() => {
+                handleMenuDropdown();
+              }}
+              className="dropdown-menu-button"
+            />
+          </div>
+          {isDropdownOpen ? menuItems : false}
+        </React.Fragment>
+      )}
     </div>
-  ) : (
-    <React.Fragment>
-      <div
-        className={`menu-horizontal ${
-          isDropdownOpen ? "menu-horizontal-open" : ""
-        }`}
-      >
-        <div className="menu-horizontal-header">
-          <div className="name-label">Vitor A. Silva</div>
-          <MdMenu
-            size={30}
-            onClick={() => {
-              handleMenuDropdown();
-            }}
-            className="dropdown-menu-button"
-          />
-        </div>
-        {isDropdownOpen ? menuItems : false}
-      </div>
-    </React.Fragment>
   );
 };
 export default Menu;
