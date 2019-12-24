@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Col } from "reactstrap";
 
 const MenuItem = ({ itemName, active, isDropdownOpen, setIsDropdownOpen }) => {
   let anchorTarget = null;
@@ -15,7 +14,7 @@ const MenuItem = ({ itemName, active, isDropdownOpen, setIsDropdownOpen }) => {
   };
 
   return (
-    <Col className="menu-item">
+    <div className="menu-item">
       <a
         href={"#" + itemName}
         onClick={handleClick}
@@ -24,7 +23,7 @@ const MenuItem = ({ itemName, active, isDropdownOpen, setIsDropdownOpen }) => {
       >
         {itemName.toUpperCase()}
       </a>
-    </Col>
+    </div>
   );
 };
 

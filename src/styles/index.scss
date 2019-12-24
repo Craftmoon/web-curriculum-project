@@ -1,0 +1,43 @@
+@import './variables';
+@import './menu';
+
+// mixins
+
+body {
+  margin: 0;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.app {
+  display: flex;
+}
+
+/* pages classes */
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20vw;
+  width: 100%;
+}
+
+.block {
+  height: 100vh;
+}
+
+@media (max-width: 799px) {
+  .page-content {
+    padding-left: 0px;
+  }
+
+  .app {
+    flex-direction: column;
+  }
+}
