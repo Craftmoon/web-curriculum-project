@@ -129,6 +129,12 @@
   text-decoration: none;
 }
 
+.language-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
 body {
   margin: 0;
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !important;

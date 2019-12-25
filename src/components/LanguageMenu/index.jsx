@@ -2,7 +2,7 @@ import React from "react";
 
 const LanguageMenu = ({ changeLanguage }) => {
   return (
-    <div>
+    <div className="language-menu">
       <button
         onClick={() => {
           changeLanguage("en");
