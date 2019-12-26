@@ -95,7 +95,7 @@ const Menu = ({ sections, changeLanguage }) => {
       <div
         className={`
       ${menuIsVertical ? "menu-vertical" : "menu-horizontal"} 
-      ${isDropdownOpen ? " menu-horizontal-open" : ""}
+      ${isDropdownOpen && !menuIsVertical ? " menu-horizontal-open" : ""}
       `}
       >
         {menuIsVertical ? (
