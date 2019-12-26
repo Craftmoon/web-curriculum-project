@@ -3,8 +3,9 @@ import MenuItem from "../MenuItem";
 import ProfileImage from "../ProfileImage";
 import useWindowDimensions from "../../state/hooks/useWindowDimensions";
 import { MdMenu } from "react-icons/md";
+import LanguageMenu from "../LanguageMenu";
 
-const Menu = ({ sections }) => {
+const Menu = ({ sections, changeLanguage }) => {
   const [activeMenuItem, setactiveMenuItem] = useState([{ ...sections }]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -85,33 +86,40 @@ const Menu = ({ sections }) => {
   }
 
   return (
-    <div
-      className={`
+    <React.Fragment>
+      <LanguageMenu
+        changeLanguage={changeLanguage}
+        menuIsVertical={menuIsVertical}
+      />
+
+      <div
+        className={`
       ${menuIsVertical ? "menu-vertical" : "menu-horizontal"} 
       ${isDropdownOpen ? " menu-horizontal-open" : ""}
       `}
-    >
-      {menuIsVertical ? (
-        <React.Fragment>
-          <ProfileImage />
-          {menuItems}
-        </React.Fragment>
-      ) : (
-        <React.Fragment>
-          <div className="header">
-            <div className="name-label">Vitor A. Silva</div>
-            <MdMenu
-              size={30}
-              onClick={() => {
-                handleMenuDropdown();
-              }}
-              className="dropdown-menu-button"
-            />
-          </div>
-          {isDropdownOpen ? menuItems : false}
-        </React.Fragment>
-      )}
-    </div>
+      >
+        {menuIsVertical ? (
+          <React.Fragment>
+            <ProfileImage />
+            {menuItems}
+          </React.Fragment>
+        ) : (
+          <React.Fragment>
+            <div className="header">
+              <div className="name-label">Vitor A. Silva</div>
+              <MdMenu
+                size={30}
+                onClick={() => {
+                  handleMenuDropdown();
+                }}
+                className="dropdown-menu-button"
+              />
+            </div>
+            {isDropdownOpen ? menuItems : false}
+          </React.Fragment>
+        )}
+      </div>
+    </React.Fragment>
   );
 };
 export default Menu;

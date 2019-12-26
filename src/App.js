@@ -1,7 +1,6 @@
 import React from "react";
 import Menu from "./components/Menu";
 import { useTranslation } from "react-i18next";
-import LanguageMenu from "./components/LanguageMenu";
 
 function App() {
   const sections = {
@@ -15,16 +14,13 @@ function App() {
   const { t, i18n } = useTranslation();
 
   const changeLanguage = lang => {
-    console.log("language", lang);
     i18n.changeLanguage(lang);
   };
 
   return (
     <div className="app">
-      <Menu sections={sections} />
+      <Menu sections={sections} changeLanguage={changeLanguage} />
       <div className="page-content">
-        <LanguageMenu changeLanguage={changeLanguage} />
-
         <div id="profile" className="block">
           {t("profile.menuLabel")}
         </div>

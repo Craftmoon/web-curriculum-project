@@ -1,29 +1,36 @@
 import React from "react";
+import brasilFlag from "../../assets/images/country-flags/brazil.svg";
+import japanFlag from "../../assets/images/country-flags/japan.svg";
+import unitedStatesFlag from "../../assets/images/country-flags/united-states.svg";
 
-const LanguageMenu = ({ changeLanguage }) => {
+const LanguageMenu = ({ changeLanguage, menuIsVertical }) => {
   return (
-    <div className="language-menu">
-      <button
+    <div
+      className={`language-menu ${
+        menuIsVertical ? "" : "language-menu-padded"
+      }`}
+    >
+      <img
+        src={unitedStatesFlag}
+        alt="united states flag"
         onClick={() => {
           changeLanguage("en");
         }}
-      >
-        EN
-      </button>
-      <button
+      />
+      <img
+        src={brasilFlag}
+        alt="brazil flag"
         onClick={() => {
           changeLanguage("pt");
         }}
-      >
-        PT
-      </button>
-      <button
+      />
+      <img
+        src={japanFlag}
+        alt="japan flag"
         onClick={() => {
           changeLanguage("jp");
         }}
-      >
-        JP
-      </button>
+      />
     </div>
   );
 };
