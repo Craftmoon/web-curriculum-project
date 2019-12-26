@@ -12,7 +12,7 @@ const MenuItem = ({ itemName, active, isDropdownOpen, setIsDropdownOpen }) => {
   const handleClick = e => {
     e.preventDefault();
     anchorTarget.scrollIntoView({ behavior: "smooth", block: "start" });
-    setIsDropdownOpen(!isDropdownOpen);
+    if (isDropdownOpen) setIsDropdownOpen(false);
   };
 
   return (
