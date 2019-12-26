@@ -1,0 +1,17 @@
+{
+  "profile": {
+    "menuLabel": "PERFIL"
+  },
+  "intro": {
+    "menuLabel": "INTRO"
+  },
+  "education": {
+    "menuLabel": "FORMAÇÃO"
+  },
+  "experience": {
+    "menuLabel": "EXPERIÊNCIA"
+  },
+  "skills": {
+    "menuLabel": "HABILIDADES"
+  }
+}

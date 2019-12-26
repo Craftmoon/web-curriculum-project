@@ -1,0 +1,17 @@
+{
+  "profile": {
+    "menuLabel": "プロファイル"
+  },
+  "intro": {
+    "menuLabel": "イントロ"
+  },
+  "education": {
+    "menuLabel": "学歴"
+  },
+  "experience": {
+    "menuLabel": "経験"
+  },
+  "skills": {
+    "menuLabel": "スキル"
+  }
+}
