@@ -31,18 +31,20 @@ const Profile = ({ t }) => {
         </div>
       </div>
       <div className="hero-foot profile-foot">
-        <div className="columns ">
-          <div className="column is-one-third has-text-centered">
-            <div className="profile-info-title">{t("profile.location")}</div>
-            <div className="profile-info">Anapolis, GO (BR)</div>
-          </div>
-          <div className="column is-one-third has-text-centered">
-            <div className="profile-info-title">{t("profile.email")}</div>
-            <div className="profile-info">v.augustosilva@gmail.com</div>
-          </div>
-          <div className="column is-one-third has-text-centered">
-            <div className="profile-info-title">{t("profile.phone")}</div>
-            <div className="profile-info">+55 62 982513622</div>
+        <div className="container">
+          <div className="columns ">
+            <div className="column is-one-third has-text-centered">
+              <div className="profile-info-title">{t("profile.location")}</div>
+              <div className="profile-info">Anapolis, GO (BR)</div>
+            </div>
+            <div className="column is-one-third has-text-centered">
+              <div className="profile-info-title">{t("profile.email")}</div>
+              <div className="profile-info">v.augustosilva@gmail.com</div>
+            </div>
+            <div className="column is-one-third has-text-centered">
+              <div className="profile-info-title">{t("profile.phone")}</div>
+              <div className="profile-info">+55 62 982513622</div>
+            </div>
           </div>
         </div>
       </div>

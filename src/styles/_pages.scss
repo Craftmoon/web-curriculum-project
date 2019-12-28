@@ -1,15 +1,18 @@
+.profile-title {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
 .surname {
   color: $primaryColor;
 }
 
-.hero-body {
-  padding: 3rem 3rem;
+.subtitle {
+  padding-left: 5px;
 }
 
-.subtitle {
-  span {
-    padding-left: 5px;
-  }
+.hero-body {
+  padding: 3rem 3rem;
 }
 
 .column {
@@ -18,22 +21,9 @@
   }
 }
 
-.profile-foot {
-  padding: 25px 10px 10px 10px;
-  margin: 0px 3rem;
-  border-top: 2px solid $lightGray;
-  min-height: 15vh;
-
-}
-
-.profile-title {
-  font-weight: bold;
-  font-size: 4rem;
-}
-
 .button:hover {
-  background-color: white !important;
-  border: 2px solid $lightGray !important;
+  background-color: $activeColor !important;
+  border: 2px solid $veryLightGray !important;
   width: 40px;
 
   .icon-button {
@@ -41,11 +31,17 @@
   }
 }
 
-.profile-button {
-  background-color: $lightGray;
-  border-color: $lightGray;
+.profile-foot {
+  padding: 25px 10px 10px 10px;
+  margin: 0px 3rem;
+  border-top: 2px solid $veryLightGray;
+  min-height: 15vh;
 }
 
+.profile-button {
+  background-color: $veryLightGray;
+  border-color: $veryLightGray;
+}
 
 .profile-info {
   font-size: 0.8rem;
