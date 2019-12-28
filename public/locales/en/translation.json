@@ -1,6 +1,11 @@
 {
   "profile": {
-    "menuLabel": "PROFILE"
+    "menuLabel": "PROFILE",
+    "title": "VITOR <1 className='surname'>SILVA</1>",
+    "subtitle": "Front End Software Engineer",
+    "location": "Location",
+    "email": "Email",
+    "phone": "Phone"
   },
   "intro": {
     "menuLabel": "INTRO"

@@ -1,9 +1,14 @@
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+
+// the import below of everything from bulma is temporary
+@import "../../node_modules/bulma/bulma.sass";
+
 @import "./variables";
 @import "./menu";
 @import "./languageMenu";
+@import "./pages";
 
 // mixins
-
 body {
   margin: 0;
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !important;

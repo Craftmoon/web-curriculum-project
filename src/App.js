@@ -1,6 +1,7 @@
 import React from "react";
 import Menu from "./components/Menu";
 import { useTranslation } from "react-i18next";
+import Profile from "./pages/profile";
 
 function App() {
   const sections = {
@@ -22,7 +23,7 @@ function App() {
       <Menu sections={sections} changeLanguage={changeLanguage} />
       <div className="page-content">
         <div id="profile" className="block">
-          {t("profile.menuLabel")}
+          <Profile t={t} />
         </div>
         <div id="intro" className="block">
           {t("intro.menuLabel")}

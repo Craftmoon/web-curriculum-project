@@ -1,6 +1,11 @@
 {
   "profile": {
-    "menuLabel": "プロファイル"
+    "menuLabel": "プロファイル",
+    "title": "<1>SILVA</1> VITOR",
+    "subtitle": "フロントエンド ソフトウェア エンジニア",
+    "location": "所在地",
+    "email": "メールアドレス",
+    "phone": "電話番号"
   },
   "intro": {
     "menuLabel": "イントロ"
