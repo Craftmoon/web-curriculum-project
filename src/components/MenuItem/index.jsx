@@ -1,34 +1,33 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
-class MenuItem extends Component {
-  constructor(props) {
-    super();
-    this.anchorTarget = null;
-    this.handleClick = this.handleClick.bind(this);
-  }
-  handleClick(e) {
+const MenuItem = ({ itemName, active, isDropdownOpen, setIsDropdownOpen }) => {
+  let anchorTarget = null;
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    anchorTarget = document.getElementById(itemName);
+  });
+
+  const handleClick = e => {
     e.preventDefault();
-    this.anchorTarget.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-  componentDidMount() {
-    this.anchorTarget = document.getElementById(this.props.itemName);
-  }
+    anchorTarget.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (isDropdownOpen) setIsDropdownOpen(false);
+  };
 
-  render() {
-    const { itemName, active } = this.props;
-    return (
-      <li>
-        <a
-          href={"#" + itemName}
-          onClick={this.handleClick}
-          aria-label={"Scroll to " + itemName}
-          className={active ? "active" : "inactive"}
-        >
-          {itemName}
-        </a>
-      </li>
-    );
-  }
-}
+  return (
+    <div className="menu-item">
+      <a
+        href={"#" + itemName}
+        onClick={handleClick}
+        aria-label={"Scroll to " + itemName}
+        className={active === "active" ? "active" : "inactive"}
+      >
+        {/* {itemName.toUpperCase()} */}
+        {t(`${itemName}.menuLabel`)}
+      </a>
+    </div>
+  );
+};
 
 export default MenuItem;

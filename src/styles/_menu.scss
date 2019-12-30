@@ -1,0 +1,94 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.profile-image {
+  max-width: 10rem;
+  max-height: 10rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  border-radius: 50% !important;
+  margin: 25px 0px;
+  width: 100%;
+  height: auto;
+}
+
+.menu {
+  background-color: $primaryColor;
+  color: $terciaryColor;
+  position: fixed;
+  z-index: 2;
+}
+
+.menu-vertical {
+  @extend .menu;
+  @include flexCenter(column);
+  min-width: 150px;
+  max-width: 260px;
+  width: 20vw;
+  height: 100vh;
+}
+
+.menu-horizontal {
+  @extend .menu;
+  @include flexCenter(row);
+  justify-content: space-between;
+  height: 40px;
+  padding: 5px 10px 5px 15px;
+  width: 100%;
+
+  .header {
+    @include flexCenter(row);
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.menu-horizontal-open {
+  height: auto !important;
+  flex-direction: column !important;
+  text-align: start !important;
+  align-items: unset !important;
+}
+
+.dropdown-menu-button {
+  cursor: pointer;
+  color: $gray;
+  border: 1px solid $gray;
+  border-radius: 5px;
+  padding: 2px;
+
+  &:hover {
+    cursor: pointer;
+    color: $gray;
+  }
+}
+
+/* menu items */
+
+.menu-item {
+  margin: 4px;
+
+  .active {
+    color: $activeColor;
+    font-weight: bold;
+
+    &:hover {
+      color: $activeColor;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+
+  .inactive {
+    color: $inactiveColor;
+
+    &:hover {
+      color: $activeColor;
+      text-decoration: none;
+    }
+  }
+}
