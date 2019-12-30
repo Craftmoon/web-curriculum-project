@@ -1,4 +1,4 @@
-[Live Preview](https://vitorsilva.herokuapp.com)
+[Live Preview](http://vitorsilvacurriculum.herokuapp.com/)
 
 # Website Curriculum
 
