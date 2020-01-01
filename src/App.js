@@ -26,7 +26,7 @@ function App() {
         <div id="profile" className="block">
           <Profile t={t} />
         </div>
-        {/* <div id="intro" className="block">
+        <div id="intro" className="block">
           {t("intro.menuLabel")}
         </div>
         <div id="experience" className="block">
@@ -36,8 +36,8 @@ function App() {
           {t("education.menuLabel")}
         </div>
         <div id="skills" className="block">
-          {t("skills.menuLabel")} 
-        </div>*/}
+          {t("skills.menuLabel")}
+        </div>
       </div>
     </div>
   );

@@ -26,43 +26,43 @@ const Menu = ({ sections, changeLanguage }) => {
     }
   };
 
-  // const getAnchorPoints = () => {
-  //   const curScroll = window.scrollY;
+  const getAnchorPoints = () => {
+    const curScroll = window.scrollY;
 
-  //   for (var key in sections) {
-  //     sections[key] =
-  //       document.getElementById(key).getBoundingClientRect().top + curScroll;
-  //   }
+    for (var key in sections) {
+      sections[key] =
+        document.getElementById(key).getBoundingClientRect().top + curScroll;
+    }
 
-  //   /* Get the pixel height of the viewport */
+    /* Get the pixel height of the viewport */
 
-  //   const viewPortHeight = Math.max(
-  //     document.documentElement.clientHeight,
-  //     window.innerHeight || 0
-  //   );
+    const viewPortHeight = Math.max(
+      document.documentElement.clientHeight,
+      window.innerHeight || 0
+    );
 
-  //   /* Get the pixel-depth of the bottom of the page */
+    /* Get the pixel-depth of the bottom of the page */
 
-  //   const bottom = document.body.offsetHeight;
+    const bottom = document.body.offsetHeight;
 
-  //   /* If max-scroll is less than the pixel-depth of Section 3, then adjust the pixel-depth of Section 3 to be 50px higher than max scroll depth ... allowing it to be an active destination */
+    /* If max-scroll is less than the pixel-depth of Section 3, then adjust the pixel-depth of Section 3 to be 50px higher than max scroll depth ... allowing it to be an active destination */
 
-  //   if (viewPortHeight > bottom - sections.experience) {
-  //     sections.experience = bottom - viewPortHeight - 50;
-  //   }
+    if (viewPortHeight > bottom - sections.experience) {
+      sections.experience = bottom - viewPortHeight - 50;
+    }
 
-  //   handleScroll();
-  // };
+    handleScroll();
+  };
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
 
-  //   /* When window resizes, get new scroll-depth positions of anchors */
+    /* When window resizes, get new scroll-depth positions of anchors */
 
-  //   window.addEventListener("resize", getAnchorPoints);
+    window.addEventListener("resize", getAnchorPoints);
 
-  //   getAnchorPoints();
-  // }, []);
+    getAnchorPoints();
+  }, []);
 
   const handleMenuDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -101,7 +101,7 @@ const Menu = ({ sections, changeLanguage }) => {
         {menuIsVertical ? (
           <React.Fragment>
             <ProfileImage />
-            {/* {menuItems} */}
+            {menuItems}
           </React.Fragment>
         ) : (
           <React.Fragment>
@@ -113,7 +113,7 @@ const Menu = ({ sections, changeLanguage }) => {
                   handleMenuDropdown();
                 }}
                 className="dropdown-menu-button"
-              /> */}
+              />
             </div>
             {isDropdownOpen ? menuItems : false}
           </React.Fragment>
