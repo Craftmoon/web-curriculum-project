@@ -106,7 +106,7 @@ const Menu = ({ sections, changeLanguage }) => {
         ) : (
           <React.Fragment>
             <div className="header">
-              <div className="name-label">Vitor A. Silva</div>
+              <div className="name-label">Vitor Silva</div>
               <MdMenu
                 size={30}
                 onClick={() => {

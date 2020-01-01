@@ -1,0 +1,26 @@
+.profile-title {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.profile-foot {
+  padding: 25px 10px 10px 10px;
+  margin: 0px 3rem;
+  border-top: 2px solid $veryLightGray;
+  min-height: 15vh;
+}
+
+.profile-button {
+  background-color: $veryLightGray;
+  border-color: $veryLightGray;
+}
+
+.profile-info {
+  font-size: 0.8rem;
+  color: #888888;
+}
+
+.profile-info-title {
+  @extend .profile-info;
+  font-weight: bold;
+}
