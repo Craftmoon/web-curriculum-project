@@ -14,7 +14,40 @@
     "menuLabel": "FORMAÇÃO"
   },
   "experience": {
-    "menuLabel": "EXPERIÊNCIA"
+    "menuLabel": "EXPERIÊNCIA",
+    "title": "Experiência",
+    "subtitle1": "Experiência de trabalho",
+    "subtitle2": "Estágios",
+    "experiences": {
+      "job1": {
+        "timeRange": "Agosto 2018 - Dezembro 2019",
+        "company": "onBlox Software Logístico",
+        "role": "Engenheiro de Software Desenvolvedor Front-end",
+        "location": "Anápolis, GO (Brasil)",
+        "description": "Trabalhei no desenvolvimento de um sistema de gerenciamento de armazém (WMS) e da versão mobile deste voltado a operações realizadas no centro de distribuição. Utilizavamos Linux, scrum e gitflow no ambiente de desenvolvimento. As principais atividades eram desenvolvimento de telas e componentes segundo protótipos, assim como levantamento de requisitos e criação de diagramas de fluxo de sistema. Principais tecnologias utilizadas foram HTML, CSS, Javascript, Bootstrap e ReactJS."
+      },
+      "job2": {
+        "timeRange": "Outubro 2017 - Fevereiro 2018",
+        "company": "onBlox Software Logístico",
+        "role": "Estagiário Analista de Gestão de Projetos",
+        "location": "Anápolis, GO (Brasil)",
+        "description": "Atividades constituiam-se de análise e asistência na gestão de projetos de desenvolvimento de software, e de projetos de implantações logísticas em iterações. Metodologias utilizadas incluem scrum utilizando ferramenta JIRA, e metodologia de gestão ágil segundo conceitos e práticas adaptadas do PMBOK e PRINCE2Agile."
+      },
+      "job3": {
+        "timeRange": "Março 2014 - Setembro 2014",
+        "company": "Fábrica de Tecnologias Turing",
+        "role": "Estagiário Bolsista Desenvolvedor Front-end",
+        "location": "Anápolis, GO (Brasil)",
+        "description": "Atividades incluíam desenvolvimento front-end web em equipe scrum e desenvolvimento de documentação de software segundo UML. Principais tecnologias utilizadas foram Javascript, HTML, CSS, e bootstrap."
+      },
+      "job4": {
+        "timeRange": "Maio 2011 - Janeiro 2013",
+        "company": "S&S Construções",
+        "role": "Auxiliar Administrativo",
+        "location": "Anápolis, GO (Brasil)",
+        "description": "Atividades constuíam-se de auxiliar todo setor administrativo da empresa, elaborando e organizando documentação em geral, atendimento e direcionamento de fornecedores e clientes por e-mail, elaboração de agendas, etc."
+      }
+    }
   },
   "skills": {
     "menuLabel": "HABILIDADES"

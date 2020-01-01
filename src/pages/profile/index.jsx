@@ -14,10 +14,10 @@ const Profile = ({ t }) => {
                 <Trans i18nKey="profile.title">
                   VITOR <span className="surname">SILVA</span>
                 </Trans>
-                <p className="subtitle">
-                  <span>{t("profile.subtitle")}</span>
-                </p>
               </div>
+              <p className="subtitle">
+                <span>{t("profile.subtitle")}</span>
+              </p>
             </div>
             <div className="column">
               <Button url="https://github.com/Craftmoon">

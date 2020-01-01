@@ -14,7 +14,38 @@
     "menuLabel": "学歴"
   },
   "experience": {
-    "menuLabel": "経験"
+    "menuLabel": "職歴",
+    "title": "職歴",
+    "experiences": {
+      "job1": {
+        "timeRange": "2018年8月 - 2019年12月",
+        "company": "onBlox 物流ソフトウェア",
+        "role": "フロントエンド ソフトウェア エンジニア",
+        "location": "Anapolis, GO (ブラジル)",
+        "description": "倉庫管理システム（WMS）と流通 センター で実行される操作のモバイルAppの開発に参加しました。開発環境ではスクラムとgitflowを使用しました。活動は、プロトタイプに基づいた画面とコンポーネントの開発、要件収集、システムフロー図の作成でした。."
+      },
+      "job2": {
+        "timeRange": "2017年10月 - 2018年2月",
+        "company": "onBlox 物流ソフトウェア",
+        "role": "プロジェクト管理 アナリスト インターン",
+        "location": "Anapolis, GO (ブラジル)",
+        "description": "活動は、ソフトウェア開発プロジェクトの管理における分析と支援、および物流ソフトデプロイメントプロジェクトで構成されていました。 使用される方法論には、JIRAツールを使用したスクラム、PMBOKおよびPRINCE2Agileから採用された概念と実践に従ったアジャイル管理方法論が含まれます。."
+      },
+      "job3": {
+        "timeRange": "2014年3月 - 2014年9月",
+        "company": "技術工場Turing",
+        "role": "Web開発者奨学金インターン",
+        "location": "Anapolis, GO (ブラジル)",
+        "description": "活動にはフロントエンド開発とUMLソフトウェアドキュメンテーション開発が含まれました。使用されたテクノロジーは、Javascript、HTML、CSS、およびBootstrapでした。."
+      },
+      "job4": {
+        "timeRange": "2011年5月 - 2013年1月",
+        "company": "S&S建設",
+        "role": "管理助手",
+        "location": "Anapolis, GO (ブラジル)",
+        "description": "活動は会社の管理部門全体の支援、メールによる提供者や顧客のサービス、日程の整理、などで構成されていました。."
+      }
+    }
   },
   "skills": {
     "menuLabel": "スキル"

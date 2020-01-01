@@ -2,6 +2,7 @@ import React from "react";
 import Menu from "./components/Menu";
 import { useTranslation } from "react-i18next";
 import Profile from "./pages/profile";
+import Experience from "./pages/experience";
 
 function App() {
   const sections = {
@@ -29,7 +30,7 @@ function App() {
           {t("intro.menuLabel")}
         </div>
         <div id="experience" className="block">
-          {t("experience.menuLabel")}
+          <Experience t={t} />
         </div>
         <div id="education" className="block">
           {t("education.menuLabel")}

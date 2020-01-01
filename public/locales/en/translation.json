@@ -2,7 +2,7 @@
   "profile": {
     "menuLabel": "PROFILE",
     "title": "VITOR <1 className='surname'>SILVA</1>",
-    "subtitle": "Front End Software Engineer",
+    "subtitle": "Front-end Software Engineer",
     "location": "Location",
     "email": "Email",
     "phone": "Phone"
@@ -14,7 +14,38 @@
     "menuLabel": "EDUCATION"
   },
   "experience": {
-    "menuLabel": "EXPERIENCE"
+    "menuLabel": "EXPERIENCE",
+    "title": "Experience",
+    "experiences": {
+      "job1": {
+        "timeRange": "August 2018 - December 2019",
+        "company": "onBlox Logistic Software",
+        "role": "Front-end Software Engineer",
+        "location": "Anapolis, GO (Brazil)",
+        "description": "Worked on the development of a warehouse management system (WMS) and the mobile version of it, focused on operations performed at the distribution center. We used scrum and gitflow in the development environment. Main activities were development of screen and components based on prototypes, as well as requirements gathering and system flow diagrams creation. Main technologies used were HTML, CSS, Javascript, Bootstrap and ReactJS."
+      },
+      "job2": {
+        "timeRange": "October 2017 - February 2018",
+        "company": "onBlox Logistic Software",
+        "role": "Project Management Analyst Intern",
+        "location": "Anapolis, GO (Brazil)",
+        "description": "Activities consisted of analysis and assistance in the management of software development projects, and logistics deployment projects in iterations. Methodologies used include scrum using JIRA tool, and agile management methodology according to concepts and practices adapted from PMBOK and PRINCE2Agile."
+      },
+      "job3": {
+        "timeRange": "March 2014 - September 2014",
+        "company": "Turing Technology Factory",
+        "role": "Web developer Scholarship Intern",
+        "location": "Anapolis, GO (Brazil)",
+        "description": "Activities included front end development in a scrum team and UML software documentation development. Main technologies used were Javascript, HTML, CSS, and bootstrap."
+      },
+      "job4": {
+        "timeRange": "May 2011 - January 2013",
+        "company": "S&S Constructions",
+        "role": "Administrative assistant",
+        "location": "Anapolis, GO (Brazil)",
+        "description": "Activities consisted of assisting the entire administrative sector of the company, preparing and organizing documentation, service and direction of suppliers and customers by email, organizing of agendas, etc."
+      }
+    }
   },
   "skills": {
     "menuLabel": "SKILLS"

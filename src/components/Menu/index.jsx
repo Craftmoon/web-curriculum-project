@@ -107,7 +107,7 @@ const Menu = ({ sections, changeLanguage }) => {
           <React.Fragment>
             <div className="header">
               <div className="name-label">Vitor Silva</div>
-              {/* <MdMenu
+              <MdMenu
                 size={30}
                 onClick={() => {
                   handleMenuDropdown();
