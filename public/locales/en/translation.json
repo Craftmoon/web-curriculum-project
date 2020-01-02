@@ -11,7 +11,23 @@
     "menuLabel": "INTRO"
   },
   "education": {
-    "menuLabel": "EDUCATION"
+    "menuLabel": "EDUCATION",
+    "subtitle1": "College",
+    "subtitle2": "Interuniversity Exchange",
+    "college": {
+      "timeRange": "August 2013 - December 2018",
+      "institutionName": "Anápolis University Center (UniEVANGÉLICA)",
+      "course": "Bachelor of Computer Engineering",
+      "location": "Anapolis, GO (Brazil)",
+      "description": "Although titled Computer Engineering, the main focus of the course is software. The course covers all major areas of software engineering, including requirements engineering, software documentation, front-end and back-end development. , software testing, databases, human computer interaction, project management, and others. It also includes three semesters of internship at the college's technology factory."
+    },
+    "exchangeProgram": {
+      "timeRange": "September 2015 - August 2016",
+      "institutionName": "Shibaura Institute of Technology (SIT)",
+      "course": "Interuniversity Exchange Undergraduation (Information Science and Engineering Dept.)",
+      "location": "Higashi-Omiya, Saitama (Japan)",
+      "description": "Interuniversity Exchange by the Brazilian Science Without Borders (CsF) program. The duration of the exchange was one year, studying at SIT, known worldwide for the university's high rate of globalization. Activities included participation in a laboratory that studied human-computer interaction (IHC), including topics such as design, UI / UX, and others. Subjects included software design methodology, IHC, assistive technologies, engineering ethics, among others."
+    }
   },
   "experience": {
     "menuLabel": "EXPERIENCE",

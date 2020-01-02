@@ -1,5 +1,4 @@
 import React from "react";
-import { Trans } from "react-i18next";
 import TimelinePost from "../../components/TimelinePost";
 
 const Experience = ({ t }) => {
@@ -7,7 +6,7 @@ const Experience = ({ t }) => {
     <section className="section">
       <h1 className="title">{t("experience.menuLabel")}</h1>
       <div className="container">
-        <div className="experience-container">
+        <div className="timeline-container">
           <TimelinePost
             timeRange={t("experience.experiences.job1.timeRange")}
             company={t("experience.experiences.job1.company")}
@@ -36,7 +35,7 @@ const Experience = ({ t }) => {
             location={t("experience.experiences.job4.location")}
             description={t("experience.experiences.job4.description")}
           />
-          <div className="timeline-start"></div>
+          <div className="timeline-startpoint"></div>
         </div>
       </div>
     </section>
