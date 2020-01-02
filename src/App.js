@@ -3,6 +3,7 @@ import Menu from "./components/Menu";
 import { useTranslation } from "react-i18next";
 import Profile from "./pages/profile";
 import Experience from "./pages/experience";
+import Education from "./pages/education";
 
 function App() {
   const sections = {
@@ -33,7 +34,7 @@ function App() {
           <Experience t={t} />
         </div>
         <div id="education" className="block">
-          {t("education.menuLabel")}
+          <Education t={t} />
         </div>
         <div id="skills" className="block">
           {t("skills.menuLabel")}
