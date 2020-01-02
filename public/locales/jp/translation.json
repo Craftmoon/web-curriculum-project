@@ -1,5 +1,5 @@
 {
-  "profile": {
+  "intro": {
     "menuLabel": "プロファイル",
     "title": "<1>SILVA</1> VITOR",
     "subtitle": "フロントエンド ソフトウェア エンジニア",
@@ -7,8 +7,8 @@
     "email": "メールアドレス",
     "phone": "電話番号"
   },
-  "intro": {
-    "menuLabel": "イントロ"
+  "about": {
+    "menuLabel": "アバウト"
   },
   "education": {
     "menuLabel": "学歴",

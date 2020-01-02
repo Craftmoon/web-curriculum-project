@@ -1,14 +1,16 @@
 import React from "react";
 import Menu from "./components/Menu";
 import { useTranslation } from "react-i18next";
-import Profile from "./pages/profile";
+import Intro from "./pages/intro";
 import Experience from "./pages/experience";
 import Education from "./pages/education";
+import Skills from "./pages/skills";
+import About from "./pages/about";
 
 function App() {
   const sections = {
-    profile: null,
     intro: null,
+    about: null,
     experience: null,
     education: null,
     skills: null
@@ -24,11 +26,11 @@ function App() {
     <div className="app">
       <Menu sections={sections} changeLanguage={changeLanguage} />
       <div className="page-content">
-        <div id="profile" className="block">
-          <Profile t={t} />
-        </div>
         <div id="intro" className="block">
-          {t("intro.menuLabel")}
+          <Intro t={t} />
+        </div>
+        <div id="about" className="block">
+          <About t={t} />
         </div>
         <div id="experience" className="block">
           <Experience t={t} />
@@ -37,7 +39,7 @@ function App() {
           <Education t={t} />
         </div>
         <div id="skills" className="block">
-          {t("skills.menuLabel")}
+          <Skills t={t} />
         </div>
       </div>
     </div>

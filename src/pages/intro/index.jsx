@@ -3,20 +3,20 @@ import { Trans } from "react-i18next";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Button from "../../components/Button";
 
-const Profile = ({ t }) => {
+const Intro = ({ t }) => {
   return (
     <section className="hero is-fullheight">
       <div className="hero-body ">
         <div className="container">
           <div className="columns is-vcentered">
             <div className="column is-three-quarters">
-              <div className="profile-title">
-                <Trans i18nKey="profile.title">
+              <div className="intro-title">
+                <Trans i18nKey="intro.title">
                   VITOR <span className="surname">SILVA</span>
                 </Trans>
               </div>
               <p className="subtitle">
-                <span>{t("profile.subtitle")}</span>
+                <span>{t("intro.subtitle")}</span>
               </p>
             </div>
             <div className="column">
@@ -30,20 +30,20 @@ const Profile = ({ t }) => {
           </div>
         </div>
       </div>
-      <div className="hero-foot profile-foot">
+      <div className="hero-foot intro-foot">
         <div className="container">
           <div className="columns ">
             <div className="column is-one-third has-text-centered">
-              <div className="profile-info-title">{t("profile.location")}</div>
-              <div className="profile-info">Anapolis, GO (BR)</div>
+              <div className="intro-info-title">{t("intro.location")}</div>
+              <div className="intro-info">Anapolis, GO (BR)</div>
             </div>
             <div className="column is-one-third has-text-centered">
-              <div className="profile-info-title">{t("profile.email")}</div>
-              <div className="profile-info">v.augustosilva@gmail.com</div>
+              <div className="intro-info-title">{t("intro.email")}</div>
+              <div className="intro-info">v.augustosilva@gmail.com</div>
             </div>
             <div className="column is-one-third has-text-centered">
-              <div className="profile-info-title">{t("profile.phone")}</div>
-              <div className="profile-info">+55 62 982513622</div>
+              <div className="intro-info-title">{t("intro.phone")}</div>
+              <div className="intro-info">+55 62 982513622</div>
             </div>
           </div>
         </div>
@@ -52,4 +52,4 @@ const Profile = ({ t }) => {
   );
 };
 
-export default Profile;
+export default Intro;

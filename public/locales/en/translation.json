@@ -1,5 +1,5 @@
 {
-  "profile": {
+  "intro": {
     "menuLabel": "PROFILE",
     "title": "VITOR <1 className='surname'>SILVA</1>",
     "subtitle": "Front-end Software Engineer",
@@ -7,8 +7,8 @@
     "email": "Email",
     "phone": "Phone"
   },
-  "intro": {
-    "menuLabel": "INTRO"
+  "about": {
+    "menuLabel": "ABOUT"
   },
   "education": {
     "menuLabel": "EDUCATION",

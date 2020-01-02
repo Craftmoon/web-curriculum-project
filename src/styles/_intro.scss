@@ -1,26 +1,26 @@
-.profile-title {
+.intro-title {
   font-weight: bold;
   font-size: 4rem;
 }
 
-.profile-foot {
+.intro-foot {
   padding: 25px 10px 10px 10px;
   margin: 0px 3rem;
   border-top: 2px solid $veryLightGray;
   min-height: 15vh;
 }
 
-.profile-button {
+.intro-button {
   background-color: $veryLightGray;
   border-color: $veryLightGray;
 }
 
-.profile-info {
+.intro-info {
   font-size: 0.8rem;
   color: #888888;
 }
 
-.profile-info-title {
-  @extend .profile-info;
+.intro-info-title {
+  @extend .intro-info;
   font-weight: bold;
 }
