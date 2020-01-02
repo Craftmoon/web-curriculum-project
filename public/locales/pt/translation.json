@@ -1,5 +1,5 @@
 {
-  "profile": {
+  "intro": {
     "menuLabel": "PERFIL",
     "title": "VITOR <1 className='surname'>SILVA</1>",
     "subtitle": "Engenheiro de Software Desenvolvedor Front-end",
@@ -7,8 +7,8 @@
     "email": "Email",
     "phone": "Número de contato"
   },
-  "intro": {
-    "menuLabel": "INTRO"
+  "about": {
+    "menuLabel": "SOBRE"
   },
   "education": {
     "menuLabel": "FORMAÇÃO",
