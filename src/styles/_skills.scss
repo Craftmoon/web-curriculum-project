@@ -1,0 +1,105 @@
+.skills-container {
+  padding: 15px;
+
+  .card {
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+      0 0px 0 1px rgba(10, 10, 10, 0.1);
+
+    &.media:not(:last-child) {
+      margin-bottom: 0px !important;
+    }
+  }
+
+  .card-content {
+    background-color: transparent;
+    padding: 0.5rem;
+
+    .title {
+      margin-bottom: 0px;
+      margin-left: 5px;
+    }
+  }
+
+  .subtitle {
+    padding: 0px;
+  }
+
+  .image img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+#skills {
+  .subtitle:first-of-type {
+    margin-bottom: 0px;
+  }
+}
+
+.skill-icon {
+  height: 3rem;
+  width: 3rem;
+
+  &.react {
+    color: #78cce4;
+  }
+
+  &.js {
+    color: #ffd738;
+  }
+
+  &.html {
+    color: #e86229;
+  }
+
+  &.css {
+    color: #2091ec;
+  }
+
+  &.angular {
+    color: #dc3f36;
+  }
+
+  &.scrum {
+    color: #16375e;
+  }
+
+  &.git {
+    color: #ea4e31;
+  }
+
+  &.sql {
+    color: #acadb1;
+  }
+
+  &.bootstrap {
+    color: #533b79;
+  }
+
+  &.nodejs {
+    color: #7ec62a;
+  }
+
+  &.ts {
+    color: #007acc;
+  }
+
+  &.bulma {
+    color: #56d2b2;
+  }
+}
+
+.proficiency-level {
+  width: fit-content;
+
+  &:hover {
+    zoom: 120%;
+  }
+}
+
+.info-icon {
+  color: #005691;
+  position: absolute;
+  cursor: pointer;
+  margin-left: 10px;
+}

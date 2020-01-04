@@ -66,6 +66,31 @@
     }
   },
   "skills": {
-    "menuLabel": "HABILIDADES"
+    "menuLabel": "HABILIDADES",
+    "title": "Habilidades",
+    "subtitle1": "Habilidades Técnicas",
+    "subtitle2": "Idiomas",
+    "proficiency": {
+      "1": {
+        "title": "Noção fundamental (conhecimento básico)",
+        "description": "Você tem um conhecimento comum ou um entendimento de técnicas e conceitos básicos."
+      },
+      "2": {
+        "title": "Iniciante (experiência limitada)",
+        "description": "Você tem o nível de experiência adquirido em sala de aula e/ou cenários experimentais ou como estagiário no trabalho. Espera-se que você precise de ajuda para executar esta habilidade."
+      },
+      "3": {
+        "title": "Intermediário (aplicação prática)",
+        "description": "Você é capaz de concluir com êxito as tarefas nesta competência, conforme solicitado. A ajuda de um especialista pode ser solicitada ocasionalmente, mas você geralmente pode executar a habilidade de forma independente."
+      },
+      "4": {
+        "title": "Avançado (teoria aplicada)",
+        "description": "Você pode executar as ações associadas a essa habilidade sem assistência. Você certamente é reconhecido dentro da sua organização imediata como uma pessoa para perguntar quando surgirem perguntas difíceis sobre essa habilidade."
+      },
+      "5": {
+        "title": "Expert (autoridade reconhecida)",
+        "description": "Você é conhecido como especialista nesta área. Você pode fornecer orientação, solucionar problemas e responder a perguntas relacionadas a essa área de especialização e ao campo em que a habilidade é usada."
+      }
+    }
   }
 }
