@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaRegStar, FaStar } from "react-icons/fa";
-import { useTranslation } from "react-i18next";
+import SkillDropdown from "./SkillDropdown";
 
-const SkillBlock = ({ level, skillName, children }) => {
-  const { t } = useTranslation();
-
+const SkillBlock = ({ t, level, skillName, children }) => {
+  const tooltipPath = `skills.proficiency.${level}.title`;
+  // const [isSkillBodyOpen, setIsSkillBodyOpen] = useState(false);
   let proficiencyLevel = [];
 
   const returnStar = (filledStar, number) => {
@@ -18,8 +18,6 @@ const SkillBlock = ({ level, skillName, children }) => {
   for (let i = 1; i <= 5; i++) {
     proficiencyLevel.push(returnStar(level >= i, i));
   }
-
-  const tooltipPath = `skills.proficiency.${level}.title`;
 
   return (
     <div className="card">
@@ -43,6 +41,10 @@ const SkillBlock = ({ level, skillName, children }) => {
           </div>
         </div>
       </div>
+      {/* <SkillDropdown
+        isSkillBodyOpen={isSkillBodyOpen}
+        setIsSkillBodyOpen={setIsSkillBodyOpen}
+      /> */}
     </div>
   );
 };

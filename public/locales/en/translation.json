@@ -69,6 +69,7 @@
     "subtitle1": "Technical Skills",
     "subtitle2": "Languages",
     "proficiency": {
+      "explanation": "Information about the skill level classification (stars)",
       "1": {
         "title": "Fundamental Awareness (basic knowledge)",
         "description": "You have a common knowledge or an understanding of basic techniques and concepts."

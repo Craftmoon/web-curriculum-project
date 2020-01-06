@@ -4,7 +4,7 @@ import TimelinePost from "../../components/TimelinePost";
 const Education = ({ t }) => {
   return (
     <section className="section">
-      <h1 className="title">{t("education.menuLabel")}</h1>
+      <h1 className="title page-title">{t("education.menuLabel")}</h1>
       <h2 className="subtitle">{t("education.subtitle1")}</h2>
       <div className="container">
         <div className="timeline-container">

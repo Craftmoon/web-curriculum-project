@@ -71,6 +71,7 @@
     "subtitle1": "Habilidades Técnicas",
     "subtitle2": "Idiomas",
     "proficiency": {
+      "explanation": "Informação sobre a classificação de nível por estrelas",
       "1": {
         "title": "Noção fundamental (conhecimento básico)",
         "description": "Você tem um conhecimento comum ou um entendimento de técnicas e conceitos básicos."

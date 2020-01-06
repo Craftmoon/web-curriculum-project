@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import SkillBlock from "../../components/SkillBlock";
 import { DiScrum } from "react-icons/di";
+import BulmaLogo from "../../assets/images/logos/bulma-logo.png";
+import TsLogo from "../../assets/images/logos/ts-logo.png";
+import TechSkillExplanation from "../../components/SkillBlock/TechSkillExplanation";
 import {
   FaJs,
   FaReact,
@@ -14,24 +17,31 @@ import {
   FaInfoCircle
 } from "react-icons/fa";
 
-import BulmaLogo from "../../assets/images/logos/bulma-logo.png";
-import TsLogo from "../../assets/images/logos/ts-logo.png";
-
 const Skills = ({ t }) => {
+  const [isTechSkillInfoOpen, setIsTechSkillInfoOpen] = useState(false);
+
   return (
     <section className="section">
-      <h1 className="title">{t("skills.menuLabel")}</h1>
+      <div className="title page-title">{t("skills.menuLabel")}</div>
       <h2 className="subtitle">
         {t("skills.subtitle1")}
-        <span className="icon is-small info-icon ">
-          <FaInfoCircle />
+        <span
+          className="icon is-small info-icon has-tooltip-info"
+          data-tooltip={t("skills.proficiency.explanation")}
+        >
+          <FaInfoCircle
+            onClick={() => {
+              setIsTechSkillInfoOpen(!isTechSkillInfoOpen);
+            }}
+          />
         </span>
+        <TechSkillExplanation isTechSkillInfoOpen={isTechSkillInfoOpen} t={t} />
       </h2>
       <div className="container">
         <div className="skills-container">
           <div className="columns">
             <div className="column">
-              <SkillBlock t={t} t={t} level={3} skillName="React">
+              <SkillBlock t={t} level={3} skillName="React">
                 <FaReact className="skill-icon react" />
               </SkillBlock>
             </div>
@@ -79,24 +89,24 @@ const Skills = ({ t }) => {
           </div>
           <div className="columns">
             <div className="column">
-              <SkillBlock level={2} skillName="SQL">
+              <SkillBlock t={t} level={2} skillName="SQL">
                 <FaDatabase className="sql skill-icon" />
               </SkillBlock>
             </div>
             <div className="column">
-              <SkillBlock level={2} skillName="Angular">
+              <SkillBlock t={t} level={2} skillName="Angular">
                 <FaAngular className="angular skill-icon" />
               </SkillBlock>
             </div>
           </div>
           <div className="columns">
             <div className="column">
-              <SkillBlock level={1} skillName="NodeJS">
+              <SkillBlock t={t} level={1} skillName="NodeJS">
                 <FaNodeJs className="nodejs skill-icon" />
               </SkillBlock>
             </div>
             <div className="column">
-              <SkillBlock level={1} skillName="Typescript">
+              <SkillBlock t={t} level={1} skillName="Typescript">
                 <img src={TsLogo} className="ts skill-icon" />
               </SkillBlock>
             </div>

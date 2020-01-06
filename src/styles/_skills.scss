@@ -5,14 +5,14 @@
     box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
       0 0px 0 1px rgba(10, 10, 10, 0.1);
 
-    &.media:not(:last-child) {
-      margin-bottom: 0px !important;
+    .media:not(:last-child) {
+      margin-bottom: 0rem !important;
     }
   }
 
   .card-content {
     background-color: transparent;
-    padding: 0.5rem;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
 
     .title {
       margin-bottom: 0px;
@@ -102,4 +102,53 @@
   position: absolute;
   cursor: pointer;
   margin-left: 10px;
+}
+
+.dropdown-toggle {
+  height: 14px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: -5px;
+
+  &:hover {
+    background-color: #efefef;
+    .dropdown-icon {
+      color: #4a4a4a;
+    }
+  }
+
+  .dropdown-icon {
+    color: lightGray;
+    &:hover {
+      color: #4a4a4a;
+    }
+  }
+}
+
+.tech-explanation {
+  padding: 1rem;
+}
+
+.text {
+  font-size: 12px;
+  color: #616161;
+}
+
+.tech-explanation-message {
+  margin-right: 14px;
+  text-align: justify;
+}
+
+.explanation-item:not(:last-of-type):not(:first-of-type) {
+  margin: 0.5rem 0rem;
+}
+
+/*work-around to a currently not solved bug in bulma-tooltip*/
+
+[data-tooltip]:not(.is-loading),
+[data-tooltip]:not(.is-disabled),
+[data-tooltip]:not([disabled]) {
+  cursor: pointer;
+  overflow: visible;
+  position: absolute !important;
 }
