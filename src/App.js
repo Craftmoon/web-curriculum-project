@@ -10,7 +10,7 @@ import About from "./pages/about";
 function App() {
   const sections = {
     intro: null,
-    about: null,
+    // about: null,
     experience: null,
     education: null,
     skills: null
@@ -29,9 +29,9 @@ function App() {
         <div id="intro" className="block">
           <Intro t={t} />
         </div>
-        <div id="about" className="block">
+        {/* <div id="about" className="block">
           <About t={t} />
-        </div>
+        </div> */}
         <div id="experience" className="block">
           <Experience t={t} />
         </div>
