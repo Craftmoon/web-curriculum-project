@@ -50,20 +50,18 @@ const Skills = ({ t }) => {
                 <FaJs className="js skill-icon" />
               </SkillBlock>
             </div>
-          </div>
-          <div className="columns">
             <div className="column">
               <SkillBlock t={t} level={3} skillName="HTML">
                 <FaHtml5 className="html skill-icon" />
               </SkillBlock>
             </div>
+          </div>
+          <div className="columns">
             <div className="column">
               <SkillBlock t={t} level={3} skillName="CSS/SCSS">
                 <FaCss3Alt className="css skill-icon" />
               </SkillBlock>
             </div>
-          </div>
-          <div className="columns">
             <div className="column">
               <SkillBlock t={t} level={3} skillName="Git">
                 <FaGitAlt className="git skill-icon" />
@@ -86,20 +84,18 @@ const Skills = ({ t }) => {
                 <DiScrum className="scrum skill-icon" />
               </SkillBlock>
             </div>
-          </div>
-          <div className="columns">
             <div className="column">
               <SkillBlock t={t} level={2} skillName="SQL">
                 <FaDatabase className="sql skill-icon" />
               </SkillBlock>
             </div>
+          </div>
+          <div className="columns">
             <div className="column">
               <SkillBlock t={t} level={2} skillName="Angular">
                 <FaAngular className="angular skill-icon" />
               </SkillBlock>
             </div>
-          </div>
-          <div className="columns">
             <div className="column">
               <SkillBlock t={t} level={1} skillName="NodeJS">
                 <FaNodeJs className="nodejs skill-icon" />

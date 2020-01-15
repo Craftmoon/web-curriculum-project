@@ -2,11 +2,8 @@
 
 # Website Curriculum
 
-I like Linux (did you know that penguins are kind of always squatting?).  
-Curriculums made in Word sometimes get it's formatting warped when opened with LibreOffice Writer.  
-Got mad at it.  
-Made a website instead.  
-The end.
+Repository made to store my website curriculum.
+I intend to keep developing this project and updating it new ideas and technologies applicable to the scope of the website in iterations.
 
 ## Installation
 
