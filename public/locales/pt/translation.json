@@ -1,5 +1,5 @@
 {
-  "profile": {
+  "intro": {
     "menuLabel": "PERFIL",
     "title": "VITOR <1 className='surname'>SILVA</1>",
     "subtitle": "Engenheiro de Software Desenvolvedor Front-end",
@@ -7,16 +7,91 @@
     "email": "Email",
     "phone": "Número de contato"
   },
-  "intro": {
-    "menuLabel": "INTRO"
+  "about": {
+    "menuLabel": "SOBRE"
   },
   "education": {
-    "menuLabel": "FORMAÇÃO"
+    "menuLabel": "FORMAÇÃO",
+    "subtitle1": "Ensino Superior",
+    "subtitle2": "Graduação Sanduíche",
+    "college": {
+      "timeRange": "Agosto 2013 - Dezembro 2018",
+      "institutionName": "Centro Universitário de Anápolis (UniEVANGÉLICA)",
+      "course": "Bacharelado em Engenharia de Computação",
+      "location": "Anápolis, GO",
+      "description": "Apesar de entitulado Engenharia de Computação, o foco principal do curso é software. O curso abrange todas as áreas principais de engenharia de software, entre elas engenharia de requisitos, documentação de software, desenvolvimento front-end e back-end, testes de software, bancos de dados, interação humano computador, gestão de projetos, entre outras. Inclui também três semestres de estágio na fábrica de tecnologias da faculdade."
+    },
+    "exchangeProgram": {
+      "timeRange": "Setembro 2015 - Agosto 2016",
+      "institutionName": "Instituto Shibaura de Tecnologia (SIT)",
+      "course": "Graduação Sanduíche em Engenharia e Ciências da Informação",
+      "location": "Higashi-Omiya, Saitama (Japão)",
+      "description": "Graduação sanduíche pelo programa brasileiro Ciências sem Fronteiras (CsF). A duração do intercâmbio foi de um ano, estudando na SIT, conhecida mundialmente pelo alto índice de globalização da universidade. Atividades incluiam participação de um laboratório que estudava interação humano-computador (IHC), incluindo temas como design, UI/UX e outros. Matérias incluiam metodologia de design de software, IHC, tecnologias assistivas, ética de engenharia, entre outros."
+    }
   },
   "experience": {
-    "menuLabel": "EXPERIÊNCIA"
+    "menuLabel": "EXPERIÊNCIA",
+    "title": "Experiência",
+    "subtitle1": "Experiência de trabalho",
+    "subtitle2": "Estágios",
+    "experiences": {
+      "job1": {
+        "timeRange": "Agosto 2018 - Dezembro 2019",
+        "company": "onBlox Software Logístico",
+        "role": "Engenheiro de Software Desenvolvedor Front-end",
+        "location": "Anápolis, GO",
+        "description": "Trabalhei no desenvolvimento de um sistema de gerenciamento de armazém (WMS) e da versão mobile deste voltado a operações realizadas no centro de distribuição. Utilizavamos Linux, scrum e gitflow no ambiente de desenvolvimento. As principais atividades eram desenvolvimento de telas e componentes segundo protótipos, assim como levantamento de requisitos e criação de diagramas de fluxo de sistema. Principais tecnologias utilizadas foram HTML, CSS, Javascript, Bootstrap e ReactJS."
+      },
+      "job2": {
+        "timeRange": "Outubro 2017 - Fevereiro 2018",
+        "company": "onBlox Software Logístico",
+        "role": "Estagiário Analista de Gestão de Projetos",
+        "location": "Anápolis, GO",
+        "description": "Atividades constituiam-se de análise e asistência na gestão de projetos de desenvolvimento de software, e de projetos de implantações logísticas em iterações. Metodologias utilizadas incluem scrum utilizando ferramenta JIRA, e metodologia de gestão ágil segundo conceitos e práticas adaptadas do PMBOK e PRINCE2Agile."
+      },
+      "job3": {
+        "timeRange": "Março 2014 - Setembro 2014",
+        "company": "Fábrica de Tecnologias Turing",
+        "role": "Estagiário Bolsista Desenvolvedor Front-end",
+        "location": "Anápolis, GO",
+        "description": "Atividades incluíam desenvolvimento front-end web em equipe scrum e desenvolvimento de documentação de software segundo UML. Principais tecnologias utilizadas foram Javascript, HTML, CSS, e bootstrap."
+      },
+      "job4": {
+        "timeRange": "Maio 2011 - Janeiro 2013",
+        "company": "S&S Construções",
+        "role": "Auxiliar Administrativo",
+        "location": "Anápolis, GO",
+        "description": "Atividades constuíam-se de auxiliar todo setor administrativo da empresa, elaborando e organizando documentação em geral, atendimento e direcionamento de fornecedores e clientes por e-mail, elaboração de agendas, etc."
+      }
+    }
   },
   "skills": {
-    "menuLabel": "HABILIDADES"
+    "menuLabel": "HABILIDADES",
+    "title": "Habilidades",
+    "subtitle1": "Habilidades Técnicas",
+    "subtitle2": "Idiomas",
+    "proficiency": {
+      "explanation": "Informação sobre a classificação de nível por estrelas",
+      "1": {
+        "title": "Noção fundamental (conhecimento básico)",
+        "description": "Você tem um conhecimento comum ou um entendimento de técnicas e conceitos básicos."
+      },
+      "2": {
+        "title": "Iniciante (experiência limitada)",
+        "description": "Você tem o nível de experiência adquirido em sala de aula e/ou cenários experimentais ou como estagiário no trabalho. Espera-se que você precise de ajuda para executar esta habilidade."
+      },
+      "3": {
+        "title": "Intermediário (aplicação prática)",
+        "description": "Você é capaz de concluir com êxito as tarefas nesta competência, conforme solicitado. A ajuda de um especialista pode ser solicitada ocasionalmente, mas você geralmente pode executar a habilidade de forma independente."
+      },
+      "4": {
+        "title": "Avançado (teoria aplicada)",
+        "description": "Você pode executar as ações associadas a essa habilidade sem assistência. Você certamente é reconhecido dentro da sua organização imediata como uma pessoa para perguntar quando surgirem perguntas difíceis sobre essa habilidade."
+      },
+      "5": {
+        "title": "Expert (autoridade reconhecida)",
+        "description": "Você é conhecido como especialista nesta área. Você pode fornecer orientação, solucionar problemas e responder a perguntas relacionadas a essa área de especialização e ao campo em que a habilidade é usada."
+      }
+    }
   }
 }

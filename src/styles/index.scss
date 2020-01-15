@@ -1,3 +1,6 @@
+@import "bulma";
+@import "~bulma-tooltip";
+
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 
 // the import below of everything from bulma is temporary
@@ -7,6 +10,8 @@
 @import "./menu";
 @import "./languageMenu";
 @import "./pages";
+@import "./intro";
+@import "./skills";
 
 // mixins
 body {
@@ -35,7 +40,7 @@ code {
 }
 
 .block {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 @media (max-width: 799px) {

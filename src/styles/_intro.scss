@@ -1,0 +1,26 @@
+.intro-title {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.intro-foot {
+  padding: 25px 10px 10px 10px;
+  margin: 0px 3rem;
+  border-top: 2px solid $veryLightGray;
+  min-height: 15vh;
+}
+
+.intro-button {
+  background-color: $veryLightGray;
+  border-color: $veryLightGray;
+}
+
+.intro-info {
+  font-size: 0.8rem;
+  color: #888888;
+}
+
+.intro-info-title {
+  @extend .intro-info;
+  font-weight: bold;
+}

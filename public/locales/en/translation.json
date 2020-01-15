@@ -1,22 +1,95 @@
 {
-  "profile": {
+  "intro": {
     "menuLabel": "PROFILE",
     "title": "VITOR <1 className='surname'>SILVA</1>",
-    "subtitle": "Front End Software Engineer",
+    "subtitle": "Front-end Software Engineer",
     "location": "Location",
     "email": "Email",
     "phone": "Phone"
   },
-  "intro": {
-    "menuLabel": "INTRO"
+  "about": {
+    "menuLabel": "ABOUT"
   },
   "education": {
-    "menuLabel": "EDUCATION"
+    "menuLabel": "EDUCATION",
+    "subtitle1": "College",
+    "subtitle2": "Interuniversity Exchange",
+    "college": {
+      "timeRange": "August 2013 - December 2018",
+      "institutionName": "Anápolis University Center (UniEVANGÉLICA)",
+      "course": "Bachelor of Computer Engineering",
+      "location": "Anapolis, GO (Brazil)",
+      "description": "Although titled Computer Engineering, the main focus of the course is software. The course covers all major areas of software engineering, including requirements engineering, software documentation, front-end and back-end development. , software testing, databases, human computer interaction, project management, and others. It also includes three semesters of internship at the college's technology factory."
+    },
+    "exchangeProgram": {
+      "timeRange": "September 2015 - August 2016",
+      "institutionName": "Shibaura Institute of Technology (SIT)",
+      "course": "Interuniversity Exchange Undergraduation (Information Science and Engineering Dept.)",
+      "location": "Higashi-Omiya, Saitama (Japan)",
+      "description": "Interuniversity Exchange by the Brazilian Science Without Borders (CsF) program. The duration of the exchange was one year, studying at SIT, known worldwide for the university's high rate of globalization. Activities included participation in a laboratory that studied human-computer interaction (IHC), including topics such as design, UI / UX, and others. Subjects included software design methodology, IHC, assistive technologies, engineering ethics, among others."
+    }
   },
   "experience": {
-    "menuLabel": "EXPERIENCE"
+    "menuLabel": "EXPERIENCE",
+    "title": "Experience",
+    "experiences": {
+      "job1": {
+        "timeRange": "August 2018 - December 2019",
+        "company": "onBlox Logistic Software",
+        "role": "Front-end Software Engineer",
+        "location": "Anapolis, GO (Brazil)",
+        "description": "Worked on the development of a warehouse management system (WMS) and the mobile version of it, focused on operations performed at the distribution center. We used scrum and gitflow in the development environment. Main activities were development of screen and components based on prototypes, as well as requirements gathering and system flow diagrams creation. Main technologies used were HTML, CSS, Javascript, Bootstrap and ReactJS."
+      },
+      "job2": {
+        "timeRange": "October 2017 - February 2018",
+        "company": "onBlox Logistic Software",
+        "role": "Project Management Analyst Intern",
+        "location": "Anapolis, GO (Brazil)",
+        "description": "Activities consisted of analysis and assistance in the management of software development projects, and logistics deployment projects in iterations. Methodologies used include scrum using JIRA tool, and agile management methodology according to concepts and practices adapted from PMBOK and PRINCE2Agile."
+      },
+      "job3": {
+        "timeRange": "March 2014 - September 2014",
+        "company": "Turing Technology Factory",
+        "role": "Web developer Scholarship Intern",
+        "location": "Anapolis, GO (Brazil)",
+        "description": "Activities included front end development in a scrum team and UML software documentation development. Main technologies used were Javascript, HTML, CSS, and bootstrap."
+      },
+      "job4": {
+        "timeRange": "May 2011 - January 2013",
+        "company": "S&S Constructions",
+        "role": "Administrative assistant",
+        "location": "Anapolis, GO (Brazil)",
+        "description": "Activities consisted of assisting the entire administrative sector of the company, preparing and organizing documentation, service and direction of suppliers and customers by email, organizing of agendas, etc."
+      }
+    }
   },
   "skills": {
-    "menuLabel": "SKILLS"
+    "menuLabel": "SKILLS",
+    "title": "Skills",
+    "subtitle1": "Technical Skills",
+    "subtitle2": "Languages",
+    "proficiency": {
+      "explanation": "Information about the skill level classification (stars)",
+      "1": {
+        "title": "Fundamental Awareness (basic knowledge)",
+        "description": "You have a common knowledge or an understanding of basic techniques and concepts."
+      },
+      "2": {
+        "title": "Novice (limited experience)",
+        "description": "You have the level of experience gained in a classroom and/or experimental scenarios or as a trainee on-the-job. You are expected to need help when performing this skill."
+      },
+      "3": {
+        "title": "Intermediate (practical application)",
+        "description": "You are able to successfully complete tasks in this competency as requested. Help from an expert may be required from time to time, but you can usually perform the skill independently."
+      },
+      "4": {
+        "title": "Advanced (applied theory)",
+        "description": "You can perform the actions associated with this skill without assistance. You are certainly recognized within your immediate organization as a person to ask when difficult questions arise regarding this skill."
+      },
+      "5": {
+        "title": "Expert (recognized authority)",
+        "description": "You are known as an expert in this area. You can provide guidance, troubleshoot and answer questions related to this area of expertise and the field where the skill is used."
+      }
+    }
   }
 }

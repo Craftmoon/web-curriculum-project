@@ -1,14 +1,5 @@
-.profile-title {
-  font-weight: bold;
-  font-size: 4rem;
-}
-
 .surname {
   color: $primaryColor;
-}
-
-.subtitle {
-  padding-left: 5px;
 }
 
 .hero-body {
@@ -31,24 +22,88 @@
   }
 }
 
-.profile-foot {
-  padding: 25px 10px 10px 10px;
-  margin: 0px 3rem;
-  border-top: 2px solid $veryLightGray;
-  min-height: 15vh;
+.timeline-container {
+  margin: 2rem 3rem 3rem 3rem;
+  border-left: 2px solid $veryLightGray;
+  padding-left: 2rem;
+  .column {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
 }
 
-.profile-button {
-  background-color: $veryLightGray;
-  border-color: $veryLightGray;
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $primaryColor;
+  position: inherit;
+  left: 44px;
+  margin-left: -38px;
+  box-shadow: 0 0 0 6px #fff;
 }
 
-.profile-info {
-  font-size: 0.8rem;
-  color: #888888;
+.timeline-startpoint {
+  height: 1px;
+  width: 16px;
+  position: absolute;
+  border-width: 1px;
+  border-style: solid;
+  color: #cccccc;
+  left: 41px;
+  bottom: 0;
 }
 
-.profile-info-title {
-  @extend .profile-info;
+.timeline-post {
+  line-height: 15px;
+  padding-bottom: 40px;
+  .column:last-of-type {
+    font-size: 13px;
+    color: #656565;
+    text-align: justify;
+  }
+}
+
+.time-range {
+  font-size: 11px;
+  color: #989898;
+}
+
+.company-name {
   font-weight: bold;
+  padding: 10px 0px;
+}
+
+.role {
+  font-size: 13px;
+  color: #656565;
+  padding: 5px 0px;
+}
+
+.location {
+  font-size: 10px;
+  color: #ababab;
+}
+
+.description {
+  padding-top: 20px !important;
+}
+
+.subtitle {
+  padding: 10px 0px 0px 15px;
+}
+
+#education .subtitle:first-of-type {
+  padding-top: 20px;
+}
+
+.section {
+  padding: 0rem 1.5rem 2rem 1.5rem;
+}
+
+.page-title {
+  background-color: #eaeaea38;
+  margin-left: -24px;
+  padding: 20px;
+  width: 100vw;
 }
