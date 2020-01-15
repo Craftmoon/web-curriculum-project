@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bulma": "^0.8.0",
+    "bulma-tooltip": "^3.0.2",
     "cra-template": "1.0.0",
     "i18next": "^19.0.2",
     "i18next-browser-languagedetector": "^4.0.1",

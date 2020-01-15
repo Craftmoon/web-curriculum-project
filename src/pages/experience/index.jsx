@@ -4,7 +4,7 @@ import TimelinePost from "../../components/TimelinePost";
 const Experience = ({ t }) => {
   return (
     <section className="section">
-      <h1 className="title">{t("experience.menuLabel")}</h1>
+      <h1 className="title page-title">{t("experience.menuLabel")}</h1>
       <div className="container">
         <div className="timeline-container">
           <TimelinePost
